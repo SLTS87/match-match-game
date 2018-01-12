@@ -1,0 +1,137 @@
+body{
+    background: #ccc;
+}
+
+main{
+    min-width: 400px;
+    max-width: 856px;
+    margin: 0 auto;
+}
+
+#memory_board, #choose{
+    box-sizing: border-box;
+    background: #8CCE95;
+    border: 3px solid #9B1A45;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: content-box;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#memory_board > div{
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    border-radius: 6px;
+    width: 87px;
+    height: 129px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 50px;
+    cursor: pointer;
+    text-align: center;
+    transform-style: preserve-3d;
+    transition: all .5s linear 0s;
+}
+
+.front{
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    border-radius: 6px;
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/shirt_1.jpg) no-repeat;
+    backface-visibility: hidden;
+    border-radius: 6px;
+}
+
+form > div{
+    height: 120px;
+}
+
+#choose{
+    display: none;
+    overflow: hidden;
+}
+#choose_shirt{
+    float: left;
+    width: 400px;
+}
+#choose_shirt img{
+    float: left;
+    margin: 0 10px;
+    width: 44px;
+    height: 65px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#choose_shirt img:nth-child(1), #choose_suit img:nth-child(1){
+    border: 3px solid #9B1A45;
+}
+
+#choose_suit{
+    float: right;
+    width: 400px;
+    margin-top: 8px;
+}
+#choose_suit img{
+    float: left;
+    margin: 0 10px;
+    width: 44px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#stopwatch{
+    border: 3px solid #9B1A45;
+    border-radius: 10px;
+    background: #8CCE95;
+    font-size: 20px;
+    width: 300px;
+    margin: 0 auto;
+    display: none;
+    padding: 5px;
+}
+
+#stopwatch span{
+    display: block;
+    float: right;
+    font-weight: bold;
+}
+
+main > input[type='image']{
+    display: none;
+    width: 50px;
+    margin: 20px 20px 0 20px;
+    float: left;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+main > input[type='image']:hover{
+    width: 100px;
+    transition: width 1s;
+}
+
+#continue{
+    margin-top: 20px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#continue:hover{
+    width: 100px;
+    transition: width 1s;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <main>
+            <section id="memory_board">
+                <b>How to play:</b></br>
+                It's a counter game where the object is to find pairs.</br>
+                When the game begins, all pictures are hidden.</br>
+                <b>To play:</b></br>
+                1. Select two cards to try to match the pictures.</br>
+                2. If you match the pictures yoy can go again.</br>
+                3. If cards don't match they turn back.</br>
+                4. Wnen you finds all pairs, you win.</br>
+                5. Don't forget to have fun!</br>
+                </br>
+                <form>
+                    Choose your level:</br>
+                    <label><input type="radio" name="level" value="4"/>Easy</label></br>
+                    <label><input type="radio" name="level" checked="checked" value="8"/>Medium</label></br>
+                    <label><input type="radio" name="level" value="16"/>Hard</label></br>
+                    <label><input type="radio" name="level" value="26"/>Expert</label></br>
+                    <div><input type="image" id="continue" src="img/continue.png"/></div>
+                </form>
+            </section>
+            <section id="choose">
+                <div id="choose_shirt">
+                    <img id="shirt_1" src="img/shirt_1.jpg" />
+                    <img id="shirt_2" src="img/shirt_2.jpg" />
+                    <img id="shirt_3" src="img/shirt_3.jpg" />
+                    <img id="shirt_4" src="img/shirt_4.jpg" />
+                </div>
+                <div id="choose_suit">
+                    <img id="suit_1" src="img/suit_1.png" />
+                    <img id="suit_2" src="img/suit_2.png" />
+                    <img id="suit_3" src="img/suit_3.png" />
+                    <img id="suit_4" src="img/suit_4.png" />
+                </div>
+            </section>
+            <section id="stopwatch">
+                Your time: <span>00:00</span>
+            </section>
+            <input type="image" id="menu" src="img/menu.png"/>
+        </main>
+    </body>
+    <script src="js/Board.js"></script>
+    <script src="js/Stopwatch.js"></script>
+    <script src="js/script.js"></script>
+</html>
